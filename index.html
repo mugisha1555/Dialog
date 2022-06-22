@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css">
+    
+</head>
+<body>
+    
+    <dialog id="dialog">
+
+        <form method="dialog" id="get_avatar_image_form">
+
+            <div class="card">
+                <section class="card--head">
+                    <!-- <div class="card--head--new-user">
+                       
+                        
+                    </div> -->
+                    <!-- <svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24">
+                        <path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                        <circle cx="8.5" cy="7" r="4"></circle>
+                        <line x1="20" y1="8" x2="20" y2="14"></line>
+                        <line x1="23" y1="11" x2="17" y2="11"></line>
+                    </svg> -->
+                    <ion-icon name="person-add-outline"></ion-icon>
+                    <p>New User</p>
+                    <!-- <svg width="24" height="24" viewBox="0 0 24 24">
+                        <line x1="18" y1="6" x2="6" y2="18"></line>
+                        <line x1="6" y1="6" x2="18" y2="18"></line>
+                    </svg> -->
+                    <button class="card--head-close_dialog">
+                        <ion-icon name="close-circle-outline"></ion-icon>
+                    </button>
+                </section>
+                <section class="card--body">
+                    <div class="card--body--file">
+                        <label for="userimage">Upload an image</label>
+                        <input id="userimage" type="file" accept=".jpg, .jpeg, .png" name="userimage">
+                    </div>
+                    <p class="card--body--max_upload">* Maximum upload 1mb</p>
+                </section>
+                <section class="card--footer">
+                    <button class="card--footer-clear_btn">Clear</button>
+                    <div class="card--footer-menu">
+                        <button class="card--footer-cancel_btn">Cancel</button>
+                        <button type="submit" id="confirmBtn" class="card--footer-cancel_confirm">Confirm</button>
+                    </div>
+                </section>
+            </div>
+
+        </form>
+
+    </dialog>
+
+    
+     <div id="container">
+     </div>
+    <button id="add_new_avatar" type="button" class="avatar-button avatar-button__add-new">+</button>
+
+    <output></output>
+
+    <script type="text/javascript" src="./index.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

@@ -1,0 +1,195 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+    color-scheme: dark light;
+}
+
+body {
+    background-color: #212529;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+dialog::backdrop {
+    backdrop-filter: blur(10px);
+}
+
+.avatar-img {
+    width: 118px;
+    border: 1px solid #aaa;
+    border-radius: 50%;
+    margin-right: 30px;
+    position: relative;
+}
+
+.avatar-img-btn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    position: relative;
+}
+
+.close-avatar-icon {
+    font-size: 28px;
+    position: absolute;
+    left: 55%;
+    border: 1px solid #495057;
+    border-radius: 50%;
+    background-color: #495057;
+}
+
+.add-svg {
+    background: transparent;
+}
+
+.click-here {
+    font-size: 4rem;
+    width: 48px;
+}
+
+.avatar-button{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 1px solid #495057;
+    position: relative;
+    background-color: #495057;
+}
+.avatar-button__add-new{
+    cursor: pointer;
+    font-size: 48px;
+    font-weight: 50;
+}
+
+.card {
+    /* position: absolute;
+    top: 50%;
+    left: 50%; */
+    border-radius: 10px;
+    /* position: absolute;
+    top: 50%;
+    left: 50%; */
+}
+
+/* .card section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+} */
+
+.card--head {
+    color: #F1F3F5;
+    font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr;
+    align-items: center;
+    background: #212529;
+    padding: 16px 24px;
+}
+
+.card--head-close_dialog {
+    background-color: transparent;
+    border: none;
+    color: #F1F3F5;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.card--head-close_dialog ion-icon {
+    position: relative;
+    top: 8px;
+}
+
+#dialog {
+    background: transparent;
+    border: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 3px 5px 9px 0px black;
+    border-radius: 12px;
+    min-height: 200px;
+    min-width: 268px;
+    width: 100%;
+    max-width: 500px;
+}
+
+.card--body {
+    background: #495057;
+    color: #F1F3F5;
+    padding: 16px 24px;
+    font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1rem;
+}
+
+.card--body--file {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin-bottom: 15px;
+}
+
+#userimage {
+    background-color: #171A1C;
+    font-size: 1rem;
+}
+
+/* :where(input[type=file]) {
+    align-self: flex-start;
+    border: 1px solid #171A1C;
+    border-radius: 1px;
+    box-shadow: red;
+    color: #ced4da;
+    cursor: auto;
+    max-inline-size: 100%;
+    padding: 0;
+} */
+
+.card--footer {
+    padding: 16px 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #212529;
+}
+
+.card--footer button {
+    cursor: pointer;
+    font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1rem;
+    padding: 6px 16px;
+}
+
+.card--footer-clear_btn {
+    background-color: #212529;
+    color: #FFC9C9;
+    border-color: #495057;
+    border-style: solid;
+    border-radius: 5px;
+}
+
+.card--footer-cancel_btn {
+    background-color: #495057;
+    border-color: #495057;
+    border-style: solid;
+    border-radius: 5px;
+    color: #F1F3F5;
+    font-weight: bold;
+}
+
+.card--footer-cancel_confirm {
+    background-color: #212529;
+    border-color: #495057;
+    border-style: solid;
+    border-radius: 5px;
+    color: #91A7FF;
+    font-weight: bold;
+}
